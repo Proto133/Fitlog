@@ -16,7 +16,7 @@ const WorkoutSchema = new Schema({
             type: String,
             trim: true,
         },
-        exDuration: Number,
+        duration: Number,
         weight: {
             type: Number,
             default: 0
@@ -34,7 +34,7 @@ const WorkoutSchema = new Schema({
             default: 0
         }
     }],
-    wDuration: {
+    totalDuration: {
         type: Number,
         default: 0,
     }

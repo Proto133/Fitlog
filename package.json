@@ -4,7 +4,7 @@
     "description": "A fitness tracking application written with mongoose, express, and nodejs.",
     "main": "server.js",
     "scripts": {
-        "seed": "node seeders/seeds.js",
+        "seed": "node seeders/seed.js",
         "watch": "nodemon server.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js"
