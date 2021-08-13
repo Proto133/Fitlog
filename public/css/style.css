@@ -111,6 +111,8 @@ input {
 }
 
 .wrapper {
+    background-image: url(http://loremflickr.com/1000/1000/workout);
+    background-size: cover;
     background-color: #f2f8ff;
     padding-bottom: 100px;
 }
