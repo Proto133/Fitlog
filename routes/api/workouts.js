@@ -4,8 +4,8 @@ const db = require("../../models");
 //get workouts
 router.get("/", (req, res) => {
     db.Workout.find({}).then(dbWorkout => {
-        console.log("ALL WORKOUTS");
-        console.log(dbWorkout);
+        // console.log("ALL WORKOUTS");
+        // console.log(dbWorkout);
         dbWorkout.forEach(workout => {
             let total = 0;
             workout.exercises.forEach(e => {
@@ -23,8 +23,8 @@ router.get("/", (req, res) => {
 
 //create workout
 router.post("/", (req, res) => {
-    console.log("WORKOUT TO BE ADDED");
-    console.log(req.body);
+    // console.log("WORKOUT TO BE ADDED");
+    // console.log(req.body);
 
     db.Workout.create(req.body).then((dbWorkout => {
         res.json(dbWorkout);
@@ -35,7 +35,7 @@ router.post("/", (req, res) => {
 
 router.put("/:id", (req, res) => {
 
-    console.log(`REQ.BODY: ${req.body}`);
+    // console.log(`REQ.BODY: ${req.body}`);
     db.Workout.findOneAndUpdate({ _id: req.params.id }, {
         $inc: { totalDuration: req.body.duration },
         $push: { exercises: req.body }
@@ -51,8 +51,8 @@ router.put("/:id", (req, res) => {
 router.get("/range", (req, res) => {
 
     db.Workout.find({}).then(dbWorkout => {
-        console.log("ALL WORKOUTS");
-        console.log(dbWorkout);
+        // console.log("ALL WORKOUTS");
+        // console.log(dbWorkout);
 
         res.json(dbWorkout);
     }).catch(err => {
