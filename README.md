@@ -1,5 +1,5 @@
 
-  <h1 align="center">FitLog 🎉 </h1>
+  <h1 align="center">FitLogr 🎉 </h1>
     
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
   
