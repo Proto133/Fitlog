@@ -20,7 +20,10 @@
   ## Installation Instructions 📣
 ---
 
-  Clone Repo, run `npm i`, run `node server.js` visit url (likely,`https://localhost:3000`).
+  1. Clone Repo 
+  2. Run `npm i`
+  3. Run `node server.js` 
+  4. Visit url (likely,`https://localhost:3000`).
   
   ## Usage 🖱️
 ---

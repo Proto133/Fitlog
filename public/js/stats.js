@@ -18,6 +18,24 @@ function populateChart(data) {
     const durations = data.map(({ totalDuration }) => totalDuration);
     const pounds = calculateTotalWeight(data);
 
+    // show the user Cardio data in text under the chart
+    let timeDiv = document.querySelector('#timeDiv')
+    let timePTag = document.createElement('p')
+    let totalDurContent = durations.reduce((total, num) => total + num);
+    timePTag.innerHTML = `You've done ${totalDurContent} minutes of cardio this week.`
+    timePTag.classList.add('totalTag')
+    timeDiv.append(timePTag)
+
+
+
+    //show user their total weight Lifted in the last 7 days
+    let poundsDiv = document.querySelector('#poundage');
+    let poundsPTag = document.createElement('p');
+    let totalPounds = pounds.reduce((total, num) => total + num)
+    poundsPTag.innerHTML = `You have thrown around ${totalPounds} LBS this week!`
+    poundsPTag.classList.add('totalTag')
+    poundsDiv.appendChild(poundsPTag);
+
     const line = document.querySelector('#canvas').getContext('2d');
     const bar = document.querySelector('#canvas2').getContext('2d');
 
