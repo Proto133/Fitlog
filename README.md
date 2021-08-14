@@ -30,6 +30,10 @@
 When you get home from the gym, go ahead and fire up your computer, launch FitLog and begin keeping track of your workouts! Never before has it been this easy to keep track of exercises and pursue physical wellbeing! Simply follow Fitlog's intuitive design and you're on your way to the body of a Greek Deity!
 
 This description was a bit facetious, but it truly is pretty easy to use. On the Exercise Entry screen, "add exercise" adds the content of the fields, and "complete" *completes* that workout, by redirecting you to the dashboard with a recap of all of the exercises you just input. 
+
+### Application Deployment
+
+Alterntively, you can visit [Fitlogr on Heroku](https://fitlogr.herokuapp.com) and try it out.
   
   ## Contributors 🧑‍🤝‍🧑
 ---
